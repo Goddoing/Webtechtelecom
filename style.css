@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  background: #000;
+}
+
+svg {
+  width: 10rem;
+}
+
+.btn {
+  background-color: #fa8909;
+  padding: 10px 45px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #f8a84c;
+}
+
+
+.text {
+  background-color: pink;
+
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* .center {
+  display: table-cell;
+  vertical-align: middle;
+} */
+
+
+.logomark {
+  /* margin: 0 auto;
+  width: 15rem; */
+  fill: #fff;
+}
+
+.logotype {
+  width: 40rem;
+  margin: 2rem 0 0 0;
+  fill: #000;
+}
+
+
+.eye-left,
+.eye-right {
+  animation-name: colorchange;
+  animation-duration: 2s;
+  animation-delay: 1.7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  fill: #000;
+}
+
+.cheekbone {
+  opacity: 0;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.cheekbone-left {
+  animation-name: cbl-move;
+}
+
+.cheekbone-right {
+  animation-name: cbr-move;
+}
+
+.cheek {
+  opacity: 0;
+  animation-name: cheek-move;
+  animation-duration: 2s;
+  animation-delay: .6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+.forehead {
+  opacity: 0;
+  animation-name: fh-move;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.ear {
+  opacity: 0;
+  animation-duration: 1.3s;
+  animation-delay: .3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.ear-left {
+  animation-name: el-move;
+}
+
+.ear-right {
+  animation-name: er-move;
+}
+
+.antenna {
+  opacity: 0;
+  animation-name: antenna-move;
+  animation-duration: 1.7s;
+  animation-delay: -6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes colorchange {
+  0% {
+    fill: #000;
+  }
+
+  100% {
+    fill: #ff8a00;
+  }
+}
+
+@keyframes colorchange2 {
+  0% {
+    fill: #000;
+  }
+
+  100% {
+    fill: #fff;
+  }
+}
+
+@keyframes cbl-move {
+  0% {
+    transform: translate(-50px, 50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes cbr-move {
+  0% {
+    transform: translate(50px, 50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes cheek-move {
+  0% {
+    transform: translate(0px, 20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fh-move {
+  0% {
+    transform: translate(0px, -50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes el-move {
+  0% {
+    transform: translate(-20px, 0px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes er-move {
+  0% {
+    transform: translate(20px, 0px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes antenna-move {
+  0% {
+    transform: translate(0px, -50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 750px) {
+  h1 {
+    font-size: 2rem;
+    color: #ff8a00;
+  }
+}
